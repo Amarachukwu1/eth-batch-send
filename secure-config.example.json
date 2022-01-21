@@ -1,5 +1,5 @@
 {
-  "address": "ADDRESS",
-  "privKey": "PRIVATE_KEY",
-  "web3Provider": "http://localhost:8545"
+  "address": "0x6a164122d5cf7c840D26e829b46dCc4ED6C0ae48",
+  "infuraId": "7e792748b1ee47c39ee4593dcf72f518",
+  "web3Provider": "https://mainnet.infura.io/v3/7e792748b1ee47c39ee4593dcf72f518"
 }
