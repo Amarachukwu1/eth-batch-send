@@ -12,9 +12,9 @@ const amount = web3.utils.toWei(config.amount)
 // sign and send
 // @param txData { nonce, gasLimit, gasPrice, to, from, value }
 function sendSigned(txData, cb) {
-  const privateKey = new Buffer(secureConfig.privKey, 'hex')
+  const infuraId = new Buffer(secureConfig.infuraId, 'hex')
   const transaction = new Tx(txData)
-  transaction.sign(privateKey)
+  transaction.sign(infuraId)
   const serializedTx = transaction.serialize().toString('hex')
   web3.eth.sendSignedTransaction('0x' + serializedTx, cb)
 }
